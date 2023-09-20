@@ -1,0 +1,186 @@
+body{
+    color: rgb(200, 100, 50);
+
+    /*
+    background-color: antiquewhite;
+    background-image: url(doga.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    */
+
+    /* arkaplan uzerinde degisiklikler yapildi 
+    background:  url(doga.jpeg) antiquewhite no-repeat center fixed;
+    background-size: cover;
+*/
+   
+}
+
+h1{
+    color: #1e4aaf82;
+}
+
+.ozelh{
+    color:hsl(100, 50%, 50%);
+    text-transform: uppercase;
+
+}
+
+#ozelhID{
+    background-color: red;
+    color: white;
+    text-transform: lowercase;
+}
+
+[title=baslik]{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font-size: 0.2in;
+}
+
+.p1-sinif{
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.p2-sinif{
+    text-align: center;
+    font-size: 1.2em;
+}
+.p3-sinif{
+    text-align: justify;
+    text-indent: 50pt;
+    line-height: 8mm;
+    word-spacing: 300%;
+    letter-spacing: 0.1cm;
+}
+.ozelA{
+    padding: 20px;
+    margin: 20px;
+  
+    border-left-width: 2px;
+    border-left-color: red;
+    border-left-style: solid;
+
+    border-top-width: 5px;
+    border-top-color: blue;
+    border-top-style: dashed;
+    display: block;
+}
+
+.ozelA:visited{
+    background-color: yellow;
+    color: red;
+}
+
+.ozelA:hover{
+    background-color: red;
+    color: yellow;
+}
+
+.ozelA:active{
+    background-color: blue;
+    color: white;
+}
+
+ul{
+    background-color: yellowgreen;
+    margin: 10px;
+}
+
+li{
+    background-color:aqua;
+    margin: 10px;
+}
+
+.liste-1{
+    list-style-type: armenian;
+    list-style-position: inside;
+    border: 5px solid red;
+
+    outline: 5px solid blue;
+
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+
+    visibility: hidden;
+}
+
+.liste-2{
+    list-style-type: lower-alpha;
+    border: 5px dotted red;
+    outline-width: 5px;
+    outline-style: dotted;
+    outline-color: blue;
+    margin: 20px 30px;
+    padding: 20px 30px;
+}
+
+.liste-3{
+    list-style-type: lower-greek;
+    border: 5px dashed red;
+    margin: 30px 40px 50px 60px;
+    padding: 30px 40px 50px 60px;
+}
+
+.liste-2, .liste-3, .liste-4{
+    border-radius: 30px;
+    font-size: 20px;
+}
+.liste-4{
+    list-style-type: georgian;
+    border: 5px double red;
+    display: none;
+}
+
+.liste-5{
+    list-style-type: upper-roman;
+    border: 10px groove red;
+}
+
+.liste-6{
+    list-style-type: decimal-leading-zero;
+    border: 10px ridge red;
+}
+
+.liste-7{
+    list-style-type: circle;
+    border: 10px inset red;
+}
+.liste-8{
+    list-style-type: square;
+    border: 10px outset red;
+}
+
+table{
+    border-collapse: collapse;
+    border-width: 10px;
+    border-color: blue;
+    border-style: dotted;
+}
+
+div span h3{
+    background-color: antiquewhite;
+    color: blueviolet;
+
+    height: 100px;
+    width: 300px;
+
+    min-height: 75px;
+    min-width: 250px;
+
+    max-height: 125px;
+    max-width: 350px;
+
+    overflow: hidden;
+}

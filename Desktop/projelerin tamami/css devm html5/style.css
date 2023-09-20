@@ -1,0 +1,177 @@
+div{
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.div-5{
+    background-color: antiquewhite;
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    z-index: 1;
+}
+
+.div-6{
+    background-color: blueviolet;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+
+    /*poziston ortalamalarda kullanilir absolute icin*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+
+    
+}
+
+.div-7{
+    background-color: yellow;
+    position: relative;
+    
+}
+
+.div-1{
+    background-color: blueviolet;
+    height: auto;
+   
+}
+
+.cocuk{
+    background-color: red;
+    color: white;
+    margin: auto;
+    height: 20px;
+    margin: 10px;
+    float: left;
+   
+}
+
+@media screen {
+    .cocuk{
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    .div-1{
+        border-radius: 10px;
+        margin-right: 30px;
+    }
+}
+
+@media print {
+    .cocuk{
+        font-size: 10px;
+        border-radius: 5px;
+    }
+    .div-1{
+        border-radius: 5px;
+        margin-right: 20px;
+    }
+}
+@media all{
+
+}
+
+
+
+@media print, screen {
+    .cocuk:hover{
+        background-color: antiquewhite;
+        color: red;
+    }
+    .div-1:hover{
+        background-color: aqua;
+    }
+}
+/*
+elinizde en az 2 adet div ve bu divlerin icinde ise yazilar
+yazmaktadir. tablet ekraninda bu yazi kuculmekte ve divin genislik-yukseklik
+de kuculmetedir. Normal ekran da ise yazi genislik ve yukseklik artmaktadir
+bunu uygun bir responsive site/kodlama yapiniz
+*/
+@media (max-width:768px) {
+    .cocuk{
+        background-color: brown;
+        color: white;
+    }
+    .div-1{
+        background-color: aqua;
+    }  
+}
+
+.cocuk-uvey{
+    height: auto;
+    background-color: transparent;
+    clear: both;
+}
+
+.div-2{
+    width: 100px;
+    margin: auto;
+    opacity: .5;
+
+    /* 
+    margin-left: auto;
+    margin-right: auto;
+    */
+}
+
+section{
+    background-color: yellow;
+    margin: 10px;
+    padding: 10px;
+}
+
+span{
+    background-color: red;
+    color: white;
+}
+svg{
+    height: 400px;
+    width: 400px;
+    background-color: antiquewhite;
+    border-radius: 10px 40px;
+}
+
+.anadiv{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.alt-div{
+    height: 40px;
+    background-color: antiquewhite;
+    border-radius: 10px 20px 30px 40px;
+}
+
+header{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+nav{
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+
+    border-radius: 20px/50%;
+}
+
+audio{
+    margin: 20px;
+}
+audio:hover{
+    margin: 20px;
+    box-shadow: 10px 10px 10px blue;
+}
+
+.alt-div:hover{
+    transition: .3s;
+    box-shadow: -10px -10px 10px tomato, 10px 5px 5px saddlebrown;
+}

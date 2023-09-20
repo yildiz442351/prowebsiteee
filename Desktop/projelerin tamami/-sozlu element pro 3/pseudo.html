@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+<style>
+    .links a: link{
+        color: aqua;
+    }
+
+    .links a:visited{
+        color: lime;
+    }
+
+    .links a:hover{
+        color: red;
+    }
+
+    .links a:active{
+        color: blueviolet;
+    }
+
+    .button button{
+        display: none;
+    }
+
+    .button:hover{
+        color:rgb(5, 110, 75);
+    }
+
+    .button:hover button{
+        display: inline-block
+    }
+      
+.lorem p:first-child{
+        background-color: cyan;
+    }
+
+    .lorem p:nth-child(2){
+        background-color: blue;
+    }
+
+    .lorem p:last-child{
+        background-color: brown;
+        color: aliceblue;
+    }
+
+    .lorem p:last-child::first-letter{
+        font-size: 30px;
+        font-weight: bold;
+        color: bisque;
+    }
+
+    .long::first-line{
+        background-color: cadetblue;
+    }
+    
+    .after p::after{
+        content: 'sonuna';
+    }
+
+    .after p::before{
+        content: 'önüne';
+    }
+    
+    ::selection{
+        color: blueviolet;
+        background-color: khaki;
+    }
+
+    ::marker{
+        color: chartreuse;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="links">
+        <a href="home.html">Ana Sayfa</a>
+        <a href="home.html">Hakkımızda</a>
+        <a href="home.html">Ürünlerimiz</a>
+        <a href="home.html">İletişim</a>
+        </div>
+
+        <br><br><br><br><br>
+
+        <div class="button">
+            Show More
+            <br>
+            <button>Click Me</button>
+        </div>
+
+<br><br><br><br><br>
+
+<div class="lorem">
+    <p>Lorem İpsum dolor sit amet.</p>
+    <p>Lorem İpsum dolor sit amet.</p>
+    <p>Lorem İpsum dolor sit amet.</p>
+</div>
+
+<div class="long">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    Velit eum ut autem qui, animi facere officiis minima ipsam quaerat
+    rerum repellendus dolores at doloremque, omnis exercitationem error
+    veniam commodi itaque?</p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    Velit eum ut autem qui, animi facere officiis minima ipsam quaerat
+    rerum repellendus dolores at doloremque, omnis exercitationem error
+    veniam commodi itaque?</p>
+</div>
+
+<br><br><br><br><br>
+<div class="after">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, fugit?</p>
+</div>
+
+<div class="before">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, odio?</p>
+</div>
+
+<br><br><br><br><br>
+
+<ul>
+    <li>Elma</li>
+    <li>Armut</li>
+    <li>Üzüm</li>
+</ul>
+
+<ol>
+    <li>Elma</li>
+    <li>Armut</li>
+    <li>Üzüm</li>
+</ol>
+
+</body>
+</html>

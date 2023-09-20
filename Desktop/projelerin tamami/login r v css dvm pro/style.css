@@ -1,0 +1,65 @@
+.div{
+    background-color: red;
+    color: white;
+    margin: 10px;
+}
+    
+.div1{
+    width: 300px;
+    height: 300px
+    box-sizing: border-box
+    border: 10px blue solid;
+    }
+    
+.div1:hover{
+    opacity: 0.5;
+}
+
+.div2{
+    column-count: 3;
+    column-gap: 50px;
+    height: 300px;
+
+    column-rule-color: yellow;
+    column-rule-width: 5px;
+    column-rule-style: solid;
+
+     /*
+     column-rule: solid 5px blue;
+     */
+}
+
+.div2:hover{
+    transform: scale(0.8);
+    transition: .3s;
+}
+
+.div3{
+    column-width: 100px;
+    text-shadow: 0 0 1px black;
+}
+
+.div3:hover{
+    transform: rotateX(45deg);
+    transition: .5s;
+}
+
+.div4{
+    width: 300px;
+    height: 300px;
+    overflow: hidden; /* auto ve scroll kendi icinde kaydirma ozellikleri acar */
+    resize: both;
+    /*
+    resize: vertical; dikey
+    resize: horizontal; yatay uyutme saglar
+    */
+}
+
+.div4:hover{
+    transition: .3s;
+    transform: translate(50px, 50px);
+    */
+    -ms-transform: translate(50px, 50px);
+    -webkit-transform: translate(50px, 50px);
+    */
+}

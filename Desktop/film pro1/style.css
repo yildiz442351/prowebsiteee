@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+/*! base css start  */
+*{
+    margin: 0;
+}
+
+body{
+    height: 200vh;
+    font-family: font-family: 'Electrolize', sans-serif;
+}
+/*! base css end  */
+
+/*! navbar start */
+.navbar{
+    background-color: black;
+    height: 60px;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 50px;
+}
+
+.logo{
+    font-size: 30px;
+    color: rgb(255, 70, 70);
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+}
+
+.menu-list-item{
+    font-weight: bold;
+}
+
+.menu-list-item:hover{
+    cursor: pointer;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+}
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+   
+.profile-text-container{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    line-height: 1;
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    border-radius:  30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.toggle-icon{
+    color: goldenrod;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 1px;
+}
+/*! navbar end */
+
+/*! sidebar start */
+.sidebar{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    row-gap: 40px;
+    position: fixed;
+    top: 0;
+}
+/*! sidebar end */
+
+/*! featured start */
+.content-wrapper{
+    margin-left: 50px;
+}
+,
+.featured-content{
+    background: url("film\ sitesi\ imh/");
+}
+/*! featured end */
